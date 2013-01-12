@@ -1,3 +1,4 @@
+#include <libpar2/par2cmdline.h>
 #include <libpar2/par2repairer.h>
 
 namespace par2 { namespace query {
@@ -16,7 +17,7 @@ private:
 	
 };
 
-Result Par2Repairer::Process(const CommandLine &commandline, bool dorepair)
+Result Par2Querier::Process(const CommandLine &commandline, bool dorepair)
 {
 	// What noiselevel are we using
 	noiselevel = commandline.GetNoiseLevel();
@@ -200,7 +201,8 @@ int main( int argc, char *argv[] )
 {
 	try
 	{
-		
+		(void) argc;
+		(void) argv;
 	}
 	catch( const std::exception &e )
 	{

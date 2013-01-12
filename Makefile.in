@@ -15,7 +15,6 @@
 
 @SET_MAKE@
 
-
 VPATH = @srcdir@
 am__make_dryrun = \
   { \
@@ -54,11 +53,10 @@ build_triplet = @build@
 host_triplet = @host@
 bin_PROGRAMS = par2query$(EXEEXT)
 subdir = .
-DIST_COMMON = README $(am__configure_deps) $(dist_noinst_SCRIPTS) \
-	$(srcdir)/Makefile.am $(srcdir)/Makefile.in \
-	$(srcdir)/config.h.in $(top_srcdir)/configure AUTHORS COPYING \
-	ChangeLog INSTALL NEWS config.guess config.sub depcomp \
-	install-sh ltmain.sh missing
+DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
+	$(srcdir)/Makefile.in $(srcdir)/config.h.in \
+	$(top_srcdir)/configure AUTHORS COPYING ChangeLog INSTALL NEWS \
+	config.guess config.sub depcomp install-sh ltmain.sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/libtool.m4 \
 	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
@@ -80,7 +78,6 @@ par2query_OBJECTS = $(am_par2query_OBJECTS)
 par2query_LDADD = $(LDADD)
 am__DEPENDENCIES_1 =
 par2query_DEPENDENCIES = $(am__DEPENDENCIES_1)
-SCRIPTS = $(dist_noinst_SCRIPTS)
 DEFAULT_INCLUDES = -I.@am__isrc@
 depcomp = $(SHELL) $(top_srcdir)/depcomp
 am__depfiles_maybe = depfiles
@@ -246,7 +243,8 @@ ACLOCAL_AMFLAGS = ${ACLOCAL_FLAGS} -I m4
 par2query_SOURCES = \
 	src/par2query.cpp
 
-dist_noinst_SCRIPTS = autogen.sh
+
+#dist_noinst_SCRIPTS = autogen.sh
 LDADD = -lstdc++ $(SIGC_LIBS)
 INCLUDES = $(SIGC_CFLAGS)
 AM_CXXFLAGS = -Wall -Wextra -Werror
@@ -620,7 +618,7 @@ distcleancheck: distclean
 	       exit 1; } >&2
 check-am: all-am
 check: check-am
-all-am: Makefile $(PROGRAMS) $(SCRIPTS) config.h
+all-am: Makefile $(PROGRAMS) config.h
 installdirs:
 	for dir in "$(DESTDIR)$(bindir)"; do \
 	  test -z "$$dir" || $(MKDIR_P) "$$dir"; \

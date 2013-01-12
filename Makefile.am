@@ -7,7 +7,7 @@ bin_PROGRAMS = \
 par2query_SOURCES = \
 	src/par2query.cpp
 
-dist_noinst_SCRIPTS = autogen.sh
+#dist_noinst_SCRIPTS = autogen.sh
 
 LDADD = -lstdc++ $(SIGC_LIBS)
 INCLUDES = $(SIGC_CFLAGS)
