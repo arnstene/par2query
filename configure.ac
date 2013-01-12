@@ -1,4 +1,4 @@
-AC_INIT([par2query],[0.1.0],[arnstene@gmail.com],[par2query],[https://github.com/arnstene/par2query])
+AC_INIT([par2query],[0.1.0],[https://github.com/arnstene/par2query],[par2query],[https://github.com/arnstene/par2query])
 AC_PREREQ([2.59])
 
 AM_INIT_AUTOMAKE([1.10 no-define])

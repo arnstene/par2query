@@ -1,4 +1,8 @@
+# par2query 
 
+Copyright (c) 2013, Arnsten Egeland (arnstene[at]gmail.com)
+
+par2query is a tool that can query PAR 2.0 files.
 
 ### Howto
 

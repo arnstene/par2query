@@ -1,3 +1,5 @@
+//  Copyright (c) 2013, Arnsten Egeland (arnstene[at]gmail.com)
+
 #include <libpar2/par2cmdline.h>
 #include <libpar2/par2repairer.h>
 
