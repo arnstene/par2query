@@ -4,14 +4,14 @@
 
 #### Reconf
 
-autoreconf --force --install
+	autoreconf --force --install
 
 #### Cleanup
 
-make mostlyclean
-make clean
-make distclean
-make maintainer-clean
+	make mostlyclean
+	make clean
+	make distclean
+	make maintainer-clean
 
 #### Update
 
@@ -27,9 +27,9 @@ make maintainer-clean
 
 #### Help
 
-https://help.github.com/articles/create-a-repo
-http://git.or.cz/course/svn.html
-
-http://www.bioinf.uni-freiburg.de/~mmann/HowTo/automake.html#exampleProg
-http://www.openismus.com/documents/linux/building_libraries/building_libraries
-http://www.openismus.com/documents/linux/automake/automake
+ * https://help.github.com/articles/create-a-repo
+ * http://git.or.cz/course/svn.html
+ * http://www.bioinf.uni-freiburg.de/~mmann/HowTo/automake.html#exampleProg
+ * http://www.openismus.com/documents/linux/building_libraries/building_libraries
+ * http://www.openismus.com/documents/linux/automake/automake
+ * https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
